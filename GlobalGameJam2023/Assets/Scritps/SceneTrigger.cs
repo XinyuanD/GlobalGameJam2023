@@ -10,7 +10,7 @@ public class SceneTrigger : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            gameManager.switchScene(targetSceneName);
+            gameManager.SwitchScene(targetSceneName);
         }
     }
 }

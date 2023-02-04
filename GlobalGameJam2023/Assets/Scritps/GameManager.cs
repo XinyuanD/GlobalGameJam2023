@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public void switchScene(string sceneName)
+    public void SwitchScene(string sceneName)
     {
         // potentially fade in and fade out??
         SceneManager.LoadScene(sceneName);
