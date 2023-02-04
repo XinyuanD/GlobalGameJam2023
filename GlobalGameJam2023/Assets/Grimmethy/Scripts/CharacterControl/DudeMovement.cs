@@ -50,6 +50,15 @@ public class DudeMovement : MonoBehaviour
     {
         rb.velocity = new Vector2(horizontalMovement * moveSpeed, rb.velocity.y);
 
+        if (horizontalMovement < 0)
+        {
+            gameObject.GetComponentInChildren<SpriteRenderer>().flipX = false;
+        }
+        else
+        {
+            gameObject.GetComponentInChildren<SpriteRenderer>().flipX = true;
+        }
+
         if (hasJumped)
         {
             hasJumped = false;
