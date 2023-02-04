@@ -71,14 +71,14 @@ public class DudeMovement : MonoBehaviour
         }
         else
         {
-            if (rb.velocity.x > moveSpeed * 2)
+            if (rb.velocity.x > moveSpeed * 1.5f)
             {
-                rb.velocity = new Vector2(moveSpeed * 2, rb.velocity.y);
+                rb.velocity = new Vector2(moveSpeed * 1.5f, rb.velocity.y);
             }
 
-            if (rb.velocity.y > moveSpeed * 2)
+            if (rb.velocity.y > moveSpeed * 1.5f)
             {
-                rb.velocity = new Vector2(rb.velocity.x, moveSpeed * 2);
+                rb.velocity = new Vector2(rb.velocity.x, moveSpeed * 1.5f);
             }
         }
     }
@@ -95,7 +95,15 @@ public class DudeMovement : MonoBehaviour
 
             Debug.Log(dir);
             // And finally we add force in the direction of dir and multiply it by force. 
-            rb.AddForce(dir * jumpForce * 2, ForceMode2D.Impulse);        
+            rb.AddForce(dir * jumpForce * 1.5f, ForceMode2D.Impulse);        
+        }
+    }
+
+    void OnTriggerStay(Collider2D col)
+    {
+        if(col.gameObject.layer == 9)
+        {
+            hasJumped = false;
         }
     }
 }
