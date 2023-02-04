@@ -49,8 +49,8 @@ MonoBehaviour:
   firePoint: {fileID: 1457415928342028318}
   projectileRock: {fileID: 3473277459518419415, guid: dbdfc6589a07b3d4bb70ab744e7cd91e, type: 3}
   timeBetweenShots: 3
-  bulletDeviation: 3
-  bulletSpeed: 20
+  bulletDeviation: 15
+  bulletSpeed: 15
   bulletLife: 2.5
   bulletSizeMod: 0
   bulletSize: 1
