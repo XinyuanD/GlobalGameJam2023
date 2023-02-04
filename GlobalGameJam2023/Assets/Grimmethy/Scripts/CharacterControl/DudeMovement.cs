@@ -19,10 +19,13 @@ public class DudeMovement : MonoBehaviour
     public Collider2D floorCollider;
     public ContactFilter2D floorFilter;
 
+    private SpriteRenderer charBody;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
+        charBody = gameObject.GetComponentInChildren<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -49,6 +52,15 @@ public class DudeMovement : MonoBehaviour
     void FixedUpdate()
     {
         rb.velocity = new Vector2(horizontalMovement * moveSpeed, rb.velocity.y);
+
+        if (horizontalMovement < 0)
+        {
+            charBody.flipX = false;
+        }
+        else if(horizontalMovement > 0)
+        {
+            charBody.flipX = true;
+        }
 
         if (hasJumped)
         {
