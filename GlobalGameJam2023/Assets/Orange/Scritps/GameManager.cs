@@ -11,6 +11,16 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
+    public void SetVolume(float volume)
+    {
+        Debug.Log("Volume set to " + volume);
+    }
+
+    public void SetBrightness(float brightness)
+    {
+        Debug.Log("Brightness set to " + brightness);
+    }
+
     public void Quit()
     {
         Application.Quit();
