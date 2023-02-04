@@ -71,20 +71,22 @@ public class DudeMovement : MonoBehaviour
         }
         else
         {
-            if (rb.velocity.x > moveSpeed * 2)
+            if (rb.velocity.x > moveSpeed * 1.5f)
             {
-                rb.velocity = new Vector2(moveSpeed * 2, rb.velocity.y);
+                rb.velocity = new Vector2(moveSpeed * 1.5f, rb.velocity.y);
             }
 
-            if (rb.velocity.y > moveSpeed * 2)
+            if (rb.velocity.y > moveSpeed * 1.5f)
             {
-                rb.velocity = new Vector2(rb.velocity.x, moveSpeed * 2);
+                rb.velocity = new Vector2(rb.velocity.x, moveSpeed * 1.5f);
             }
         }
     }
 
     void OnCollisionEnter2D(Collision2D col)
     {
+
+        //check if is jumpshroom
         if (col.gameObject.layer == 8)
         {
             mushroomJump = true;
@@ -95,7 +97,20 @@ public class DudeMovement : MonoBehaviour
 
             Debug.Log(dir);
             // And finally we add force in the direction of dir and multiply it by force. 
-            rb.AddForce(dir * jumpForce * 2, ForceMode2D.Impulse);        
+            rb.AddForce(dir * jumpForce * 1.5f, ForceMode2D.Impulse);        
+        }
+
+        // Check if is enemy
+        if (col.gameObject.layer == 10)
+        {
+            // Calculate Angle Between the collision point and the player
+            Vector3 dir = new Vector3(col.gameObject.transform.position.x, col.gameObject.transform.position.y) - new Vector3(transform.position.x, transform.position.y, 0);
+            // We then get the opposite (-Vector3) and normalize it
+            dir = -dir.normalized;
+
+            Debug.Log(dir);
+            // And finally we add force in the direction of dir and multiply it by force. 
+            rb.AddForce(dir * jumpForce * .5f, ForceMode2D.Impulse);
         }
     }
 }
