@@ -28,7 +28,7 @@ public class DudeMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetAxis("Horizontal") != 0)
+        if (Input.GetAxis("Horizontal") != Mathf.Epsilon)
         {
             horizontalMovement = Input.GetAxis("Horizontal");
             Debug.Log("Has input");
