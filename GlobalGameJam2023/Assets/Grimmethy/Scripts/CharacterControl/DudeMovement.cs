@@ -57,7 +57,7 @@ public class DudeMovement : MonoBehaviour
         {
             charBody.flipX = false;
         }
-        else
+        else if(horizontalMovement > 0)
         {
             charBody.flipX = true;
         }
