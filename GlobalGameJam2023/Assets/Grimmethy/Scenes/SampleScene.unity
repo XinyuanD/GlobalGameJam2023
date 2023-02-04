@@ -1852,7 +1852,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1391276877410098150, guid: c8d9c15087a16754bb70aad9b0359d91, type: 3}
       propertyPath: m_GravityScale
-      value: 1
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 1391276877410098151, guid: c8d9c15087a16754bb70aad9b0359d91, type: 3}
       propertyPath: m_Name
@@ -1860,7 +1860,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1391276877410098155, guid: c8d9c15087a16754bb70aad9b0359d91, type: 3}
       propertyPath: jumpForce
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1391276877410098155, guid: c8d9c15087a16754bb70aad9b0359d91, type: 3}
       propertyPath: floorFilter.useTriggers
