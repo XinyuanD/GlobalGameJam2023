@@ -85,6 +85,8 @@ public class DudeMovement : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D col)
     {
+
+        //check if is jumpshroom
         if (col.gameObject.layer == 8)
         {
             mushroomJump = true;
@@ -97,13 +99,18 @@ public class DudeMovement : MonoBehaviour
             // And finally we add force in the direction of dir and multiply it by force. 
             rb.AddForce(dir * jumpForce * 1.5f, ForceMode2D.Impulse);        
         }
-    }
 
-    void OnTriggerStay(Collider2D col)
-    {
-        if(col.gameObject.layer == 9)
+        // Check if is enemy
+        if (col.gameObject.layer == 10)
         {
-            hasJumped = false;
+            // Calculate Angle Between the collision point and the player
+            Vector3 dir = new Vector3(col.gameObject.transform.position.x, col.gameObject.transform.position.y) - new Vector3(transform.position.x, transform.position.y, 0);
+            // We then get the opposite (-Vector3) and normalize it
+            dir = -dir.normalized;
+
+            Debug.Log(dir);
+            // And finally we add force in the direction of dir and multiply it by force. 
+            rb.AddForce(dir * jumpForce * .5f, ForceMode2D.Impulse);
         }
     }
 }
