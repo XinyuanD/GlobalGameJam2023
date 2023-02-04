@@ -148,7 +148,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 1.5
   m_Material: {fileID: 6200000, guid: 171e1bfe112fad5458f6b5516da92d36, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -173,7 +173,7 @@ MonoBehaviour:
   floorCollider: {fileID: 1391276877410098149}
   floorFilter:
     useTriggers: 0
-    useLayerMask: 0
+    useLayerMask: 1
     useDepth: 0
     useOutsideDepth: 0
     useNormalAngle: 0
