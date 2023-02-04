@@ -31,7 +31,6 @@ public class DudeMovement : MonoBehaviour
         if (Input.GetAxis("Horizontal") != 0)
         {
             horizontalMovement = Input.GetAxis("Horizontal");
-            Debug.Log("Has input");
         }
 
         onGround = floorCollider.IsTouching(floorFilter);
@@ -95,7 +94,6 @@ public class DudeMovement : MonoBehaviour
             // We then get the opposite (-Vector3) and normalize it
             dir = -dir.normalized;
 
-            Debug.Log(dir);
             // And finally we add force in the direction of dir and multiply it by force. 
             rb.AddForce(dir * jumpForce * 1.5f, ForceMode2D.Impulse);        
         }
