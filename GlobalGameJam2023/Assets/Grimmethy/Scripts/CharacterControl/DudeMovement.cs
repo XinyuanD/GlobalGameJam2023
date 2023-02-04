@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class DudeMovement : MonoBehaviour
@@ -9,10 +10,11 @@ public class DudeMovement : MonoBehaviour
 
     private Rigidbody2D rb;
 
-    public int jumpForce = 20;
+    public int jumpForce = 10;
     private bool hasJumped = false;
 
     public bool onGround = false;
+    public bool mushroomJump = false;
 
     public Collider2D floorCollider;
     public ContactFilter2D floorFilter;
@@ -26,9 +28,18 @@ public class DudeMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horizontalMovement = Input.GetAxis("Horizontal");
+        if (Input.GetAxis("Horizontal") != 0)
+        {
+            horizontalMovement = Input.GetAxis("Horizontal");
+            Debug.Log("Has input");
+        }
 
         onGround = floorCollider.IsTouching(floorFilter);
+
+        if (onGround == true)
+        {
+            mushroomJump = false;
+        }
 
         if(!hasJumped && onGround && Input.GetKeyDown(KeyCode.Space))
         {
@@ -46,14 +57,45 @@ public class DudeMovement : MonoBehaviour
             rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
         }
 
-        if (rb.velocity.x > moveSpeed)
+        if (mushroomJump == false)
         {
-            rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
-        }
+            if (rb.velocity.x > moveSpeed)
+            {
+                rb.velocity = new Vector2(moveSpeed, rb.velocity.y);
+            }
 
-        if (rb.velocity.y > moveSpeed)
+            if (rb.velocity.y > moveSpeed)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, moveSpeed);
+            }
+        }
+        else
         {
-            rb.velocity = new Vector2(rb.velocity.x, moveSpeed);
+            if (rb.velocity.x > moveSpeed * 2)
+            {
+                rb.velocity = new Vector2(moveSpeed * 2, rb.velocity.y);
+            }
+
+            if (rb.velocity.y > moveSpeed * 2)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, moveSpeed * 2);
+            }
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.layer == 8)
+        {
+            mushroomJump = true;
+            // Calculate Angle Between the collision point and the player
+            Vector3 dir = new Vector3(col.gameObject.transform.position.x, col.gameObject.transform.position.y) - new Vector3(transform.position.x, transform.position.y, 0);
+            // We then get the opposite (-Vector3) and normalize it
+            dir = -dir.normalized;
+
+            Debug.Log(dir);
+            // And finally we add force in the direction of dir and multiply it by force. 
+            rb.AddForce(dir * jumpForce * 2, ForceMode2D.Impulse);        
         }
     }
 }
