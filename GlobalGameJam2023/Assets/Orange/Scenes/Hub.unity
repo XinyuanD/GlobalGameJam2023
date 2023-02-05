@@ -231,7 +231,7 @@ MonoBehaviour:
   m_Follow: {fileID: 1380528440}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 6.8
+    OrthographicSize: 4.8
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -255,7 +255,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 168563452}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.93, y: 39.384, z: -10}
+  m_LocalPosition: {x: -6.93, y: 38.808, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -20274,7 +20274,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6.8
+  orthographic size: 4.8
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -20298,7 +20298,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.93, y: 39.384, z: -10}
+  m_LocalPosition: {x: -6.93, y: 38.808, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20763,6 +20763,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1070650536, guid: 49a40fdcabbb51c41a03d981e4b4d2cd, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.005
+      objectReference: {fileID: 0}
+    - target: {fileID: 1070650536, guid: 49a40fdcabbb51c41a03d981e4b4d2cd, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.756
+      objectReference: {fileID: 0}
     - target: {fileID: 7130594334412844660, guid: 49a40fdcabbb51c41a03d981e4b4d2cd, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -20773,7 +20781,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7130594334412844660, guid: 49a40fdcabbb51c41a03d981e4b4d2cd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 38.16
+      value: 37.944
       objectReference: {fileID: 0}
     - target: {fileID: 7130594334412844660, guid: 49a40fdcabbb51c41a03d981e4b4d2cd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -20806,10 +20814,6 @@ PrefabInstance:
     - target: {fileID: 7130594334412844660, guid: 49a40fdcabbb51c41a03d981e4b4d2cd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7130594334412844661, guid: 49a40fdcabbb51c41a03d981e4b4d2cd, type: 3}
-      propertyPath: vineLayer.m_Bits
-      value: 4096
       objectReference: {fileID: 0}
     - target: {fileID: 7130594334412844664, guid: 49a40fdcabbb51c41a03d981e4b4d2cd, type: 3}
       propertyPath: m_Name

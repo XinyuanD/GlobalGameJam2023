@@ -46,11 +46,6 @@ public class PlayerMovement : MonoBehaviour
 
     public void OnJump(InputAction.CallbackContext context)
     {
-        //if (context.started && IsOnVine())
-        //{
-        //    rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
-        //}
-
         if (coyoteTimeCounter > 0f && context.started)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);

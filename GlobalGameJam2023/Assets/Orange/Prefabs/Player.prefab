@@ -138,6 +138,9 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 2048
+  vineLayer:
+    serializedVersion: 2
+    m_Bits: 4096
   moveSpeed: 5
   hasJumped: 0
   jumpSpeed: 15
@@ -293,8 +296,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0878268, y: -0.20113872}
-  m_Size: {x: 0.49950895, y: 1.1588669}
+  m_Offset: {x: 0.0072123455, y: -0.20165664}
+  m_Size: {x: 0.44229874, y: 0.9206625}
   m_Direction: 0
 --- !u!95 &1380528442
 Animator:
@@ -304,7 +307,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7130594334412844664}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 85e58974230bf8146b70a654c839738c, type: 2}
   m_CullingMode: 0
