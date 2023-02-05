@@ -173,6 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c73ca34a5fe09c848854cca3715cd11e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerFeetCollider: {fileID: 0}
   gotBounced: 0
 --- !u!1 &4380441302825553192
 GameObject:
