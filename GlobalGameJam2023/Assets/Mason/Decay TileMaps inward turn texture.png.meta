@@ -1,22 +1,7 @@
 fileFormatVersion: 2
-guid: 4c06ebf1d256bb9438c1971a2031e15e
+guid: a7993bb86ff05664f9a5c9af5648d6af
 TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: 8132473000756720709
-    second: TileMaps Decay TEST_0
-  - first:
-      213: -8954619852638769238
-    second: TileMaps Decay TEST_1
-  - first:
-      213: -3462803859186652456
-    second: TileMaps Decay TEST_2
-  - first:
-      213: 6033437019586448600
-    second: TileMaps Decay TEST_3
-  - first:
-      213: -4212891209428520305
-    second: TileMaps Decay TEST_4
+  internalIDToNameTable: []
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -78,7 +63,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
-  cookieLightType: 1
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -105,67 +90,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Server
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: tvOS
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -180,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TileMaps Decay TEST_0
+      name: Decay TileMaps inward turn texture_0
       rect:
         serializedVersion: 2
         x: 0
@@ -194,14 +119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5443f834b195cd070800000000000000
-      internalID: 8132473000756720709
+      spriteID: 88d9936da1b0c0d4591f19675ad25b94
+      internalID: -143340938
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMaps Decay TEST_1
+      name: Decay TileMaps inward turn texture_1
       rect:
         serializedVersion: 2
         x: 350
@@ -215,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aaf2ec800bccab380800000000000000
-      internalID: -8954619852638769238
+      spriteID: 423903ad492b2a24aa399473aabb66a3
+      internalID: -35836600
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMaps Decay TEST_2
+      name: Decay TileMaps inward turn texture_2
       rect:
         serializedVersion: 2
         x: 700
@@ -236,14 +161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8dae35e9c36a1ffc0800000000000000
-      internalID: -3462803859186652456
+      spriteID: b1ef4b99c87f50046827c559ffa63c9d
+      internalID: -714881278
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMaps Decay TEST_3
+      name: Decay TileMaps inward turn texture_3
       rect:
         serializedVersion: 2
         x: 0
@@ -257,14 +182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8dc4427b0031bb350800000000000000
-      internalID: 6033437019586448600
+      spriteID: c8e76b6f6fe80ff489d531702a386a2d
+      internalID: -978211696
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMaps Decay TEST_4
+      name: Decay TileMaps inward turn texture_4
       rect:
         serializedVersion: 2
         x: 350
@@ -278,14 +203,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f82b5a014cdc885c0800000000000000
-      internalID: -4212891209428520305
+      spriteID: 0265bfae8cad79d43b5e57923cb16d02
+      internalID: 1530375164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMaps Decay TEST_5
+      name: Decay TileMaps inward turn texture_5
       rect:
         serializedVersion: 2
         x: 700
@@ -299,14 +224,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56ec1e79f7023214697f8a487905a5ee
-      internalID: -1836612857
+      spriteID: efb4a956a40201b41921b584aeca2849
+      internalID: -304178909
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMaps Decay TEST_6
+      name: Decay TileMaps inward turn texture_6
       rect:
         serializedVersion: 2
         x: 0
@@ -320,14 +245,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dce2062f0a372ec4199894b7c2b4fbf3
-      internalID: 888290680
+      spriteID: dc63256f5da8a1b43aa28f123ecc21ef
+      internalID: 176305024
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMaps Decay TEST_7
+      name: Decay TileMaps inward turn texture_7
       rect:
         serializedVersion: 2
         x: 350
@@ -341,14 +266,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: acdf2f7def5415e4daadfe266ea31e80
-      internalID: 1086082507
+      spriteID: 83e6c57db548da14cbb3a0d07338929d
+      internalID: 948206440
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TileMaps Decay TEST_8
+      name: Decay TileMaps inward turn texture_8
       rect:
         serializedVersion: 2
         x: 700
@@ -362,8 +287,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1416f8c1e1555e14caf0ac379b8a4c3d
-      internalID: -155779866
+      spriteID: e9950891206de7343aad82323c903e74
+      internalID: -1022383128
       vertices: []
       indices: 
       edges: []
@@ -379,15 +304,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      TileMaps Decay TEST_5: -1836612857
-      TileMaps Decay TEST_4: -4212891209428520305
-      TileMaps Decay TEST_3: 6033437019586448600
-      TileMaps Decay TEST_1: -8954619852638769238
-      TileMaps Decay TEST_7: 1086082507
-      TileMaps Decay TEST_2: -3462803859186652456
-      TileMaps Decay TEST_0: 8132473000756720709
-      TileMaps Decay TEST_6: 888290680
-      TileMaps Decay TEST_8: -155779866
+      Decay TileMaps inward turn texture_4: 1530375164
+      Decay TileMaps inward turn texture_8: -1022383128
+      Decay TileMaps inward turn texture_5: -304178909
+      Decay TileMaps inward turn texture_7: 948206440
+      Decay TileMaps inward turn texture_2: -714881278
+      Decay TileMaps inward turn texture_0: -143340938
+      Decay TileMaps inward turn texture_6: 176305024
+      Decay TileMaps inward turn texture_1: -35836600
+      Decay TileMaps inward turn texture_3: -978211696
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
