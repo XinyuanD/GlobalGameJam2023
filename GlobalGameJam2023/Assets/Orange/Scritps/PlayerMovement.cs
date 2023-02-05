@@ -37,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 lastPos;
 
     private Animator anim;
+    public Sprite idleSprite;
 
     private bool mushroomCaveComplete = false;
 
@@ -212,5 +213,13 @@ public class PlayerMovement : MonoBehaviour
             anim.SetBool("Moving", false);
         }
         lastPos = transform.position;
+    }
+
+    public void SetToIdleAnim()
+    {
+        anim.SetBool("Moving", false);
+        anim.SetBool("Jumping", false);
+        anim.SetBool("Falling", false);
+        GetComponent<SpriteRenderer>().sprite = idleSprite;
     }
 }
