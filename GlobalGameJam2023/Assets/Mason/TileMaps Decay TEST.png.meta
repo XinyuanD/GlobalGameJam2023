@@ -246,7 +246,7 @@ TextureImporter:
       name: TileMaps Decay TEST_3
       rect:
         serializedVersion: 2
-        x: 700
+        x: 0
         y: 350
         width: 350
         height: 350
@@ -267,8 +267,8 @@ TextureImporter:
       name: TileMaps Decay TEST_4
       rect:
         serializedVersion: 2
-        x: 700
-        y: 0
+        x: 350
+        y: 350
         width: 350
         height: 350
       alignment: 0
@@ -284,6 +284,90 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: TileMaps Decay TEST_5
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 350
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56ec1e79f7023214697f8a487905a5ee
+      internalID: -1836612857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMaps Decay TEST_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dce2062f0a372ec4199894b7c2b4fbf3
+      internalID: 888290680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMaps Decay TEST_7
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 0
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acdf2f7def5415e4daadfe266ea31e80
+      internalID: 1086082507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TileMaps Decay TEST_8
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 0
+        width: 350
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1416f8c1e1555e14caf0ac379b8a4c3d
+      internalID: -155779866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -295,11 +379,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      TileMaps Decay TEST_5: -1836612857
       TileMaps Decay TEST_4: -4212891209428520305
       TileMaps Decay TEST_3: 6033437019586448600
       TileMaps Decay TEST_1: -8954619852638769238
+      TileMaps Decay TEST_7: 1086082507
       TileMaps Decay TEST_2: -3462803859186652456
       TileMaps Decay TEST_0: 8132473000756720709
+      TileMaps Decay TEST_6: 888290680
+      TileMaps Decay TEST_8: -155779866
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

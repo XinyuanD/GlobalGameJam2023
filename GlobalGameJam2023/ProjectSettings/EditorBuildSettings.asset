@@ -8,9 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Orange/Scenes/MainMenu.unity
     guid: 3f82d983f023f7548a955137ea0ec8b2
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Orange/Scenes/Hub.unity
+    guid: 42bfdea994b4a9c42bcf99bbc89dc0cb
   - enabled: 1
     path: Assets/Orange/Scenes/Level0.unity
     guid: e19616eac506a0d49a32024bec77f605
@@ -23,5 +23,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Orange/Scenes/EndScreen.unity
     guid: 3ee5aa8287aa002458f73cce7fde980b
-  m_configObjects:
-    com.unity.input.settings: {fileID: 11400000, guid: 8ceec3b3081278c47833792236821ac5, type: 2}
+  m_configObjects: {}
