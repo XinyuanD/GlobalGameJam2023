@@ -61,7 +61,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        SetRunAnim();
+        //SetRunAnim();
 
         if (mushroomCaveComplete)
         {
@@ -104,6 +104,19 @@ public class PlayerMovement : MonoBehaviour
     private void Move()
     {
         rb.velocity = new Vector2(moveInput.x * moveSpeed, rb.velocity.y);
+
+        bool isMovingX = (Mathf.Abs(rb.velocity.x) > Mathf.Epsilon);
+        bool isMovingY = (Mathf.Abs(rb.velocity.y) > Mathf.Epsilon);
+
+        if (isMovingX && !isMovingY)
+        {
+            anim.SetBool("Moving", true);
+        }
+
+        if (!isMovingX)
+        {
+            anim.SetBool("Moving", false);
+        }
 
         if (IsOnVine() && anim.GetBool("Jumping") == false)
         {
@@ -201,19 +214,19 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void SetRunAnim()
-    {
-        Vector3 posChange = transform.position - lastPos;
-        if (Mathf.Abs(posChange.x) >= .01f || Mathf.Abs(posChange.z) >= .01f)
-        {
-            anim.SetBool("Moving", true);
-        }
-        else
-        {
-            anim.SetBool("Moving", false);
-        }
-        lastPos = transform.position;
-    }
+    //void SetRunAnim()
+    //{
+    //    Vector3 posChange = transform.position - lastPos;
+    //    if (Mathf.Abs(posChange.x) >= .01f || Mathf.Abs(posChange.z) >= .01f)
+    //    {
+    //        anim.SetBool("Moving", true);
+    //    }
+    //    else
+    //    {
+    //        anim.SetBool("Moving", false);
+    //    }
+    //    lastPos = transform.position;
+    //}
 
     public void SetToIdleAnim()
     {
