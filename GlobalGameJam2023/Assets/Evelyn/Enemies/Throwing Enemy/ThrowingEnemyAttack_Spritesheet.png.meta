@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 1000
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -103,7 +103,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ThrowingEnemyAttack_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1900
+        height: 2422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64075aedaf346954ebdd649a2a1b2dda
+      internalID: 1102420784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrowingEnemyAttack_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 1900
+        y: 0
+        width: 1900
+        height: 2422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18df9444d66f0b944996482814e8ba94
+      internalID: 602922917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrowingEnemyAttack_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 3800
+        y: 0
+        width: 1900
+        height: 2422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 085904462454af447838f29940643e14
+      internalID: -2040830147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrowingEnemyAttack_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 5700
+        y: 0
+        width: 1900
+        height: 2422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8604e52a3330d1b4b9e1c32f43b2e451
+      internalID: -1583345952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrowingEnemyAttack_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 7600
+        y: 0
+        width: 1900
+        height: 2422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44ebb4afccfc387479242bc13e1ed972
+      internalID: -208587296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrowingEnemyAttack_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 9500
+        y: 0
+        width: 1900
+        height: 2422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f324e0c1c5e757b47bd1125256c28aaf
+      internalID: 1928796513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ThrowingEnemyAttack_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 11400
+        y: 0
+        width: 1900
+        height: 2422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe69c51b238ed449953ef647585428a
+      internalID: 1713704813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +261,14 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ThrowingEnemyAttack_Spritesheet_0: 1102420784
+      ThrowingEnemyAttack_Spritesheet_1: 602922917
+      ThrowingEnemyAttack_Spritesheet_4: -208587296
+      ThrowingEnemyAttack_Spritesheet_2: -2040830147
+      ThrowingEnemyAttack_Spritesheet_6: 1713704813
+      ThrowingEnemyAttack_Spritesheet_5: 1928796513
+      ThrowingEnemyAttack_Spritesheet_3: -1583345952
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
