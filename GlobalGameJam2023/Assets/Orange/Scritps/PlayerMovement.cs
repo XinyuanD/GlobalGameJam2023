@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class Movement_temporary : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     [Header("Player Self Movements")]
-    public Collider2D collider2d;
+    public Collider2D bodyCollider;
+    public Transform feet;
+    public LayerMask groundLayer;
+    public LayerMask vineLayer;
     private Rigidbody2D rb;
     private Vector2 moveInput;
     public float moveSpeed = 5f;
@@ -15,8 +18,6 @@ public class Movement_temporary : MonoBehaviour
     public float jumpHeightModifier = 0.5f;
     public float coyoteTime = 0.2f;
     public float coyoteTimeCounter;
-    //public float jumpBufferTime = 0.2f;
-    //public float jumpBufferCounter;
     public float spriteScale;
 
     [Header("Movements Due to Environment")]
@@ -27,7 +28,7 @@ public class Movement_temporary : MonoBehaviour
 
     void Start()
     {
-        collider2d = GetComponent<CapsuleCollider2D>();
+        bodyCollider = GetComponent<CapsuleCollider2D>();
         rb = GetComponent<Rigidbody2D>();
         spriteScale = transform.localScale.x;
     }
@@ -61,19 +62,25 @@ public class Movement_temporary : MonoBehaviour
     private void Move()
     {
         rb.velocity = new Vector2(moveInput.x * moveSpeed, rb.velocity.y);
+
+        if (IsOnVine())
+        {
+            rb.velocity = new Vector2(rb.velocity.x, moveInput.y * moveSpeed);
+        }
+
         if (moveInput.x > 0)
         {
-            transform.localScale = new Vector2(-spriteScale, spriteScale);
+            transform.localScale = new Vector2(spriteScale, spriteScale);
         }
         else if (moveInput.x < 0)
         {
-            transform.localScale = new Vector2(spriteScale, spriteScale);
+            transform.localScale = new Vector2(-spriteScale, spriteScale);
         }
     }
 
     private void JumpLogic()
     {
-        onGround = collider2d.IsTouchingLayers(LayerMask.GetMask("Ground"));
+        onGround = IsGrounded();
         if (onGround)
         {
             coyoteTimeCounter = coyoteTime;
@@ -82,6 +89,16 @@ public class Movement_temporary : MonoBehaviour
         {
             coyoteTimeCounter -= Time.deltaTime;
         }
+    }
+
+    private bool IsGrounded()
+    {
+        return Physics2D.OverlapCircle(feet.position, 0.2f, groundLayer);
+    }
+
+    private bool IsOnVine()
+    {
+        return Physics2D.OverlapCircle(feet.position, 0.2f, vineLayer);
     }
 
     void OnCollisionEnter2D(Collision2D other)
