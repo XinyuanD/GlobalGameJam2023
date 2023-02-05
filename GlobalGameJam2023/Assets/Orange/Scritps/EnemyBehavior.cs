@@ -15,6 +15,13 @@ public class EnemyBehavior : MonoBehaviour
     public float moveSpeed = 3f;
     public int direction = 1;
 
+    public Animator anim;
+
+    void Awake()
+    {
+        anim = GetComponentInChildren<Animator>();
+    }
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -36,9 +43,10 @@ public class EnemyBehavior : MonoBehaviour
 
     void Update()
     {
-        if (bounceDetector.gotBounced && !isStunned)
+        if (bounceDetector != null && bounceDetector.gotBounced && !isStunned)
         {
             isStunned = true;
+            anim.SetBool("Stunned", true);
             StartCoroutine(StunnedRoutine());
         }
     }
@@ -48,6 +56,7 @@ public class EnemyBehavior : MonoBehaviour
         if (!isStunned)
         {
             rb.velocity = new Vector2(direction * moveSpeed, rb.velocity.y);
+            anim.SetBool("Moving", true);
         }
     }
 
@@ -57,5 +66,6 @@ public class EnemyBehavior : MonoBehaviour
         yield return new WaitForSeconds(secondsStunned);
         bounceDetector.gotBounced = false;
         isStunned = false;
+        anim.SetBool("Stunned", false);
     }
 }
