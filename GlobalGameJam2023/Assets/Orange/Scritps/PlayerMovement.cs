@@ -5,6 +5,8 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public GameManager gameManager;
+
     [Header("Player Self Movements")]
     public Collider2D bodyCollider;
     public Transform feet;
@@ -122,8 +124,13 @@ public class PlayerMovement : MonoBehaviour
             }
             else
             {
-                // player die
+                gameManager.InvokePlayerDeath();
             }
+        }
+
+        if (other.gameObject.tag == "Spike")
+        {
+            gameManager.InvokePlayerDeath();
         }
     }
 }

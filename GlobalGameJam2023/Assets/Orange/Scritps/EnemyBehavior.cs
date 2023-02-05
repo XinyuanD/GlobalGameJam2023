@@ -34,14 +34,6 @@ public class EnemyBehavior : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.tag == "Player")
-        {
-            print("Player dies");
-        }
-    }
-
     void Update()
     {
         if (bounceDetector.gotBounced && !isStunned)
@@ -61,7 +53,6 @@ public class EnemyBehavior : MonoBehaviour
 
     IEnumerator StunnedRoutine()
     {
-        
         rb.velocity = new Vector2(0, rb.velocity.y);
         yield return new WaitForSeconds(secondsStunned);
         bounceDetector.gotBounced = false;

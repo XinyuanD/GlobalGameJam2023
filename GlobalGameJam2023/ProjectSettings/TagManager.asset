@@ -8,6 +8,8 @@ TagManager:
   - Enemy
   - Ground
   - JumpShroom
+  - Spike
+  - CheckPoint
   layers:
   - Default
   - TransparentFX
