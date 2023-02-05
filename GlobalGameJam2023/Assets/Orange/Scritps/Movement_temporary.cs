@@ -5,19 +5,25 @@ using UnityEngine.InputSystem;
 
 public class Movement_temporary : MonoBehaviour
 {
-    private Vector2 moveInput;
-    public float moveSpeed = 5f;
-    public float jumpForce = 10f;
-    public float jumpSpeed = 10f;
-    public float jumpHeightModifier = 0.5f;
-    public float spriteScale;
-
-    private bool hasJumped = false;
-    public bool onGround = false;
-    public bool mushroomJump = false;
-
+    [Header("Player Self Movements")]
     public Collider2D collider2d;
     private Rigidbody2D rb;
+    private Vector2 moveInput;
+    public float moveSpeed = 5f;
+    public bool hasJumped = false;
+    public float jumpSpeed = 10f;
+    public float jumpHeightModifier = 0.5f;
+    public float coyoteTime = 0.2f;
+    public float coyoteTimeCounter;
+    //public float jumpBufferTime = 0.2f;
+    //public float jumpBufferCounter;
+    public float spriteScale;
+
+    [Header("Movements Due to Environment")]
+    public bool onGround = false;
+    public bool mushroomJump = false;
+    public float mushroonJumpSpeed = 15f;
+    public float enemyBounceSpeed = 15f;
 
     void Start()
     {
@@ -39,15 +45,15 @@ public class Movement_temporary : MonoBehaviour
 
     public void OnJump(InputAction.CallbackContext context)
     {
-        if (context.performed && !hasJumped && onGround)
+        if (coyoteTimeCounter > 0f && context.started)
         {
-            hasJumped = true;
             rb.velocity = new Vector2(rb.velocity.x, jumpSpeed);
         }
 
-        if (context.canceled && rb.velocity.y > Mathf.Epsilon)
+        if (context.canceled && rb.velocity.y > 0f)
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * jumpHeightModifier);
+            coyoteTimeCounter = 0f;
         }
         
     }
@@ -68,10 +74,32 @@ public class Movement_temporary : MonoBehaviour
     private void JumpLogic()
     {
         onGround = collider2d.IsTouchingLayers(LayerMask.GetMask("Ground"));
-
-        if (hasJumped)
+        if (onGround)
         {
-            hasJumped = false;
+            coyoteTimeCounter = coyoteTime;
+        }
+        else
+        {
+            coyoteTimeCounter -= Time.deltaTime;
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        //check if is jumpshroom
+        if (other.gameObject.tag == "JumpShroom")
+        {
+            if (!onGround)
+            {
+                mushroomJump = true;
+                rb.velocity = new Vector2(rb.velocity.x, mushroonJumpSpeed);
+            }
+        }
+
+        // Check if is enemy
+        if (other.gameObject.tag == "Enemy")
+        {
+            rb.velocity = new Vector2(rb.velocity.x, enemyBounceSpeed);
         }
     }
 }
