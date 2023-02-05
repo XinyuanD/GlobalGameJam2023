@@ -23,6 +23,8 @@ public class PlayerMovement : MonoBehaviour
     public float coyoteTimeCounter;
     public float spriteScale;
 
+    private float jumpTime;
+
     public int wallJumpCount = 1;
     private int wallJumps;
 
@@ -120,6 +122,7 @@ public class PlayerMovement : MonoBehaviour
         if (onGround)
         {
             wallJumps = 0;
+            jumpTime = 0;
             coyoteTimeCounter = coyoteTime;
             anim.SetBool("Jumping", false);
             anim.SetBool("Falling", false);
@@ -127,6 +130,13 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             coyoteTimeCounter -= Time.deltaTime;
+            jumpTime += Time.deltaTime;
+
+            if(jumpTime > .5f)
+            {
+                anim.SetBool("Jumping", false);
+                anim.SetBool("Falling", true);
+            }
         }
     }
 

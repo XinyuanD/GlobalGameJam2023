@@ -1,13 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:GlobalGameJam2023/Assets/Evelyn/FungalCaves_Vine.png.meta
-<<<<<<< HEAD
 guid: 8e7e362164a91ad4989f4283aa464e81
-=======
-guid: b2f7b71643340bd4ea294fd1eece468a
->>>>>>> 2540d11af7f22ac1bc4dc8d111d1e24c0ba7330c
-=======
-guid: e2d7418c3713dab4c82cc9faa4e486f1
->>>>>>> 09ed785268ca855cb2b6abadf3896ed5070fdcf8:GlobalGameJam2023/Assets/Evelyn/Mushroom_Walk_Spritesheet.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -46,16 +38,16 @@ TextureImporter:
     mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: 1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 1000
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,15 +62,15 @@ TextureImporter:
   compressionQualitySet: 0
   textureFormatSet: 0
   ignorePngGamma: 0
-  applyGammaDecoding: 0
-  cookieLightType: 0
+  applyGammaDecoding: 1
+  cookieLightType: 2
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -90,7 +82,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -102,7 +94,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -111,18 +103,150 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Mushroom_Walk_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 924
+        height: 1189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f6c0dc4e8f7d5479eadf25b5b080a3
+      internalID: -559245901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Walk_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 1419
+        y: 0
+        width: 948
+        height: 1189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8364a6204553f524594f7eb96ef56d73
+      internalID: 1405596051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Walk_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 2733
+        y: 2
+        width: 921
+        height: 1097
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ed6bce528c0dc141902b06634f0a6fd
+      internalID: -1343059468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Walk_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 4031
+        y: 0
+        width: 922
+        height: 1189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27c58b2ec492d194888480fde04b87de
+      internalID: -929800064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Walk_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 5334
+        y: 0
+        width: 937
+        height: 1189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6891a95cf302817408451ece4d2915ff
+      internalID: -1685858995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mushroom_Walk_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 6633
+        y: 0
+        width: 921
+        height: 1189
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 980080740b709bb459d917ba26c4746f
+      internalID: 1959222374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 47693b93a29ad154db1b65b1a55970a8
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Mushroom_Walk_Spritesheet_4: -1685858995
+      Mushroom_Walk_Spritesheet_0: -559245901
+      Mushroom_Walk_Spritesheet_3: -929800064
+      Mushroom_Walk_Spritesheet_5: 1959222374
+      Mushroom_Walk_Spritesheet_2: -1343059468
+      Mushroom_Walk_Spritesheet_1: 1405596051
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
