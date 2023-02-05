@@ -16,6 +16,6 @@ public class BackgroundParalax : MonoBehaviour
     void Update()
     {
         Vector3 cameraPos = new Vector3(Camera.main.transform.position.x, Camera.main.transform.position.y, 0);
-        transform.position = startPos + cameraPos / 1.8f;
+        transform.position = startPos + cameraPos / 1.5f;
     }
 }
