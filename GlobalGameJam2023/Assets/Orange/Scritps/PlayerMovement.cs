@@ -47,6 +47,10 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
+        if(gameManager == null)
+        {
+            gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        }
         bodyCollider = GetComponent<CapsuleCollider2D>();
         rb = GetComponent<Rigidbody2D>();
         spriteScale = transform.localScale.x;
