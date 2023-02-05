@@ -12,18 +12,9 @@ EditorBuildSettings:
     path: Assets/Orange/Scenes/Hub.unity
     guid: 42bfdea994b4a9c42bcf99bbc89dc0cb
   - enabled: 1
-    path: Assets/Orange/Scenes/Level0.unity
-    guid: e19616eac506a0d49a32024bec77f605
-  - enabled: 1
-    path: Assets/Orange/Scenes/Level1.unity
-    guid: cf2a596521592ed4582eadc45c452b78
-  - enabled: 1
-    path: Assets/Orange/Scenes/Level2.unity
-    guid: 5a7890dc4b635cd469a268a622de76f7
+    path: Assets/Sylva/Mushroom Cave.unity
+    guid: b5ab32d9f16900e4298db7a6ad8ef409
   - enabled: 1
     path: Assets/Orange/Scenes/EndScreen.unity
     guid: 3ee5aa8287aa002458f73cce7fde980b
-  - enabled: 1
-    path: Assets/Sylva/Mushroom Cave.unity
-    guid: b5ab32d9f16900e4298db7a6ad8ef409
   m_configObjects: {}
