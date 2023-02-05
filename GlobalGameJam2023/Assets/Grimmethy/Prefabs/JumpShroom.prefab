@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7940244873966064225}
   - component: {fileID: 7940244873966064230}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: JumpShroom
-  m_TagString: Untagged
+  m_TagString: JumpShroom
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59,7 +59,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7940244874362772318}
   - component: {fileID: 7940244874362772313}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: JumpShroomSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
