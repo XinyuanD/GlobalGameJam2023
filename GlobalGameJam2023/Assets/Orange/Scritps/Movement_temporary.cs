@@ -99,7 +99,14 @@ public class Movement_temporary : MonoBehaviour
         // Check if is enemy
         if (other.gameObject.tag == "Enemy")
         {
-            rb.velocity = new Vector2(rb.velocity.x, enemyBounceSpeed);
+            if (!onGround)
+            {
+                rb.velocity = new Vector2(rb.velocity.x, enemyBounceSpeed);
+            }
+            else
+            {
+                // player die
+            }
         }
     }
 }
