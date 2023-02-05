@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour
     {
         deathScreen.SetActive(true);
         player.GetComponent<PlayerRespawn>().Respawn();
+        player.GetComponent<PlayerMovement>().SetToIdleAnim();
         player.SetActive(false);
     }
 
