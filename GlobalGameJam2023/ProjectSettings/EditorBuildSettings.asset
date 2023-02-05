@@ -23,4 +23,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Orange/Scenes/EndScreen.unity
     guid: 3ee5aa8287aa002458f73cce7fde980b
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 8ceec3b3081278c47833792236821ac5, type: 2}
