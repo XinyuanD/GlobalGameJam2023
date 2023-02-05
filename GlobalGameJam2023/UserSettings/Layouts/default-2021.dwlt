@@ -18,6 +18,7 @@ MonoBehaviour:
     y: 43
     width: 1920
     height: 989
+    height: 747
   m_ShowMode: 4
   m_Title: Scene
   m_RootView: {fileID: 2}
