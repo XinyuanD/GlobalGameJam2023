@@ -10,6 +10,7 @@ TagManager:
   - JumpShroom
   - Spike
   - CheckPoint
+  - MushroomCaveCompletion
   layers:
   - Default
   - TransparentFX
