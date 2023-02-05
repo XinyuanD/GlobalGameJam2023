@@ -38,6 +38,8 @@ public class PlayerMovement : MonoBehaviour
 
     private Animator anim;
 
+    private bool mushroomCaveComplete = false;
+
     void Awake()
     {
         anim = GetComponentInChildren<Animator>();
@@ -55,6 +57,11 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         SetRunAnim();
+
+        if (mushroomCaveComplete)
+        {
+            gameManager.SwitchScene("EndScreen");
+        }
     }
 
     void FixedUpdate()
@@ -178,6 +185,14 @@ public class PlayerMovement : MonoBehaviour
         if (other.gameObject.tag == "Spike")
         {
             gameManager.InvokePlayerDeath();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "MushroomCaveCompletion")
+        {
+            mushroomCaveComplete = true;
         }
     }
 
