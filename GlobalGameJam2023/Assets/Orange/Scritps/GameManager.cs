@@ -42,6 +42,12 @@ public class GameManager : MonoBehaviour
         player.SetActive(true);
     }
 
+    public void BackToTitleScreen()
+    {
+        // reset the level complete count
+        SwitchScene("MainMenu");
+    }
+
     public void Quit()
     {
         Application.Quit();
