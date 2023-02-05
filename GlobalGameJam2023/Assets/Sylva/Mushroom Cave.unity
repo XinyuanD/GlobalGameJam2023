@@ -5128,6 +5128,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainHubTrigger
       objectReference: {fileID: 0}
+    - target: {fileID: 2181837351035089893, guid: 7421d521989df3343b6c8b51a69038f0, type: 3}
+      propertyPath: gameManager
+      value: 
+      objectReference: {fileID: 81951780}
     - target: {fileID: 2181837351035089894, guid: 7421d521989df3343b6c8b51a69038f0, type: 3}
       propertyPath: m_RootOrder
       value: 22
