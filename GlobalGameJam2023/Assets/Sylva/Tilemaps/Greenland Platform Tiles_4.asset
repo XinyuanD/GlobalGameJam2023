@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: Greenland Platform Tiles_4
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: -228977997, guid: d3e945410d8b9504a9bd470c117b93c8, type: 3}
+  m_Sprite: {fileID: -847381814, guid: 9530fe436df787140aa90f03b744c62c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
